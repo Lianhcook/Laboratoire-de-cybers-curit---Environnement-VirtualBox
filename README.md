@@ -15,6 +15,10 @@ L'environnement repose sur VirtualBox et intègre plusieurs machines virtuelles 
 | SELKS          | IDS/IPS                    | SELKS 10                           | LAB_RED, LAB_LAN       |
 | Windows Server | Cible AD / Services        | Windows Server 2022                | LAB_LAN                |
 
+## Schéma du réseau
+
+![Schéma du laboratoire](images/schema.png)
+
 ---
 
 ## Réseaux
