@@ -17,7 +17,7 @@ L'environnement repose sur VirtualBox et intègre plusieurs machines virtuelles 
 
 ## Schéma du réseau
 
-![Schéma du laboratoire](images/schema.png)
+![Schéma du laboratoire](imagesschema.png)
 
 ---
 
