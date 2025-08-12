@@ -1,80 +1,67 @@
-**Description**
-Ce projet met en place un laboratoire de cybersécurité virtuelle permettant de simuler des attaques et d'analyser le trafic réseau.
-L'environnement repose sur VirtualBox et intègre plusieurs machines virtuelles représentant différents rôles réseau : attaquant, pare-feu, IDS/IPS et cible Active Directory.
+# Laboratoire de cybersécurité - Environnement VirtualBox
 
-Architecture du Lab
-Machine	Rôle	Système d'exploitation / Logiciel	Réseau(x)
-Kali Linux	Attaquant	Kali Linux 2025.2	LAB_RED, NAT
-IPFire	Pare-feu / Routeur	IPFire	LAB_RED, LAB_LAN
-SELKS	IDS/IPS	SELKS 10	LAB_RED, LAB_LAN
-Windows Server	Cible AD / Services	Windows Server 2022	LAB_LAN
+## Description
+Ce projet met en place un laboratoire de cybersécurité virtuelle permettant de simuler des attaques et d'analyser le trafic réseau.  
+L'environnement repose sur VirtualBox et intègre plusieurs machines virtuelles représentant différents rôles réseau : **attaquant**, **pare-feu**, **IDS/IPS** et **cible Active Directory**.
 
-**Réseaux**
-LAB_RED → Réseau externe simulé (attaquant vers pare-feu)
+---
 
-LAB_LAN → Réseau interne protégé (machines internes)
-NAT (optionnel) → Permet les mises à jour des outils depuis Internet
+## Architecture du Lab
 
-Installation
-1. Prérequis
-VirtualBox + Pack d'extension
+| Machine        | Rôle                       | Système d'exploitation / Logiciel | Réseau(x)              |
+|----------------|---------------------------|------------------------------------|------------------------|
+| Kali Linux     | Attaquant                  | Kali Linux 2025.2                 | LAB_RED, NAT           |
+| IPFire         | Pare-feu / Routeur         | IPFire                             | LAB_RED, LAB_LAN       |
+| SELKS          | IDS/IPS                    | SELKS 10                           | LAB_RED, LAB_LAN       |
+| Windows Server | Cible AD / Services        | Windows Server 2022                | LAB_LAN                |
 
-Images ISO :
+---
 
-Kali Linux 2025.2
+## Réseaux
 
-Dernière version d'IPFire
+- **LAB_RED** → Réseau externe simulé (attaquant vers pare-feu)  
+- **LAB_LAN** → Réseau interne protégé (machines internes)  
+- **NAT** *(optionnel)* → Permet les mises à jour des outils depuis Internet  
 
-SELKS 10 (avec ou sans bureau)
+---
 
-Windows Server 2022 (ou 2019)
+## Installation
 
-2. Configuration réseau dans VirtualBox
-IPFire
+### 1. Prérequis
+- VirtualBox + Pack d'extension
+- Images ISO :
+  - Kali Linux 2025.2
+  - Dernière version d'IPFire
+  - SELKS 10 (avec ou sans bureau)
+  - Windows Server 2022 (ou 2019)
 
-Adaptateur 1 : Réseau interne → LAB_RED
+### 2. Configuration réseau dans VirtualBox
 
-Adaptateur 2 : Réseau interne → LAB_LAN
+#### IPFire
+- Adaptateur 1 : Réseau interne → `LAB_RED`
+- Adaptateur 2 : Réseau interne → `LAB_LAN`
 
-Kali Linux
+#### Kali Linux
+- Adaptateur 1 : Réseau interne → `LAB_RED`
+- Adaptateur 2 : NAT *(optionnel)*
 
-Adaptateur 1 : Réseau interne → LAB_RED
+#### SELKS
+- Adaptateur 1 : Réseau interne → `LAB_RED`
+- Adaptateur 2 : Réseau interne → `LAB_LAN`
 
-Adaptateur 2 : NAT (optionnel)
+#### Windows Server
+- Adaptateur 1 : Réseau interne → `LAB_LAN`
 
-SELKS
+---
 
-Adaptateur 1 : Réseau interne → LAB_RED
+## Objectifs pédagogiques
+- Simuler des attaques et tester des règles de pare-feu  
+- Observer le trafic réseau avec SELKS (Suricata, Kibana, etc.)  
+- Mettre en place un Active Directory sur Windows Server  
+- Développer des compétences en cybersécurité offensive et défensive  
 
-Adaptateur 2 : Réseau interne → LAB_LAN
+---
 
-Windows Server
-
-Adaptateur 1 : Réseau interne → LAB_LAN
-
-3. Flux réseau simulé
-CSS
-
-Copie
-
-Modifier
-[ Kali (Attaquant) ]
-       │
-    LAB_RED
-       │
-[ IPFire (Pare-feu) ]
-       │
-    LAB_LAN
-       │
-[ SELKS (IDS/IPS) ] --- [ Windows Server (Cible AD) ]
-Objectifs pédagogiques
-Simuler des attaques et tester des règles de pare-feu
-
-Observer le trafic réseau avec SELKS (Suricata, Kibana, etc.)
-
-Mettre en place un Active Directory sur Windows Server
-
-Développeur des compétences en cybersécurité offensive et défensive
-
-Licence
+## Licence
 Projet libre pour un usage éducatif et non commercial.
+
