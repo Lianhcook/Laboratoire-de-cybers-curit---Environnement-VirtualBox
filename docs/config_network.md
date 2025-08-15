@@ -24,7 +24,7 @@
 
 | NIC | Type VirtualBox | Réseau | IP | Passerelle |
 |---|---|---|---|---|
-| **eth0** | Réseau interne | **Lab_LAN** | **192.168.100.20/24** | **192.168.100.1** |
+| **eth0** | Réseau interne | **Lab_LAN** | **192.168.100.20/24** | **192.168.2.1** |
 
 
 ---
@@ -33,7 +33,7 @@
 
 | NIC | Type VirtualBox | Réseau | IP | Passerelle | DNS |
 |---|---|---|---|---|---|
-| **Ethernet0** | Réseau interne | **Lab_LAN** | **192.168.100.50/24** | **192.168.100.1** | **192.168.100.1** (ou l’IP du DC plus tard) |
+| **Ethernet0** | Réseau interne | **Lab_LAN** | **192.168.100.50/24** | **192.168.2.1** | **192.168.2.1** |
 
 
 ---
