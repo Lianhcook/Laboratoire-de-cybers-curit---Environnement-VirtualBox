@@ -16,7 +16,7 @@
 
 | NIC | Type VirtualBox | Réseau | IP | Passerelle |
 |---|---|---|---|---|
-| **eth0** | Réseau interne | **Lab_Red** | via DHCP pfSense  **192.168.1.100/24** | **192.168.1.1** (pfSense em1) |
+| **eth0** | Réseau interne | **Lab_Red** |  **192.168.1.100/24** | **192.168.1.1** (pfSense em1) |
 
 ---
 
@@ -24,7 +24,7 @@
 
 | NIC | Type VirtualBox | Réseau | IP | Passerelle |
 |---|---|---|---|---|
-| **eth0** | Réseau interne | **Lab_LAN** | **192.168.100.20/24** | **192.168.2.1** |
+| **eth0** | Réseau interne | **Lab_LAN** | **192.168.2.102/24** | **192.168.2.1** |
 
 
 ---
@@ -33,7 +33,7 @@
 
 | NIC | Type VirtualBox | Réseau | IP | Passerelle | DNS |
 |---|---|---|---|---|---|
-| **Ethernet0** | Réseau interne | **Lab_LAN** | **192.168.100.50/24** | **192.168.2.1** | **192.168.2.1** |
+| **Ethernet0** | Réseau interne | **Lab_LAN** | **192.168.2.101/24** | **192.168.2.1** | **192.168.2.1** |
 
 
 ---
