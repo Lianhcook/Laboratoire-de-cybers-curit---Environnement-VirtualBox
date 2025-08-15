@@ -59,4 +59,4 @@
 ---
 
 ## Ping de test
-![Schéma du laboratoire](ping .png)
+![Schéma du laboratoire](ping.png)
