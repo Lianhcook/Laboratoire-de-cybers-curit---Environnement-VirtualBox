@@ -45,4 +45,4 @@ Depuis Kali Linux vers la passerelle LAB_LAN (192.168.2.1)
 Le ping a été effectué avec succès, confirmant la connectivité entre Kali et pfSense sur le réseau Lab_IDS.
 
 Observation :
-Ce test prouve que l’interface OPT1 (LAB_LAN) de pfSense est correctement configurée et que Kali communique bien avec la passerelle, pareille avec le reseau LAB_RED.
+Ce test prouve que l’interface OPT1 (LAB_LAN) de pfSense est correctement configurée et que Kali communique bien avec la passerelle, pareille avec les utilisateurs du reseau LAB_RED.
