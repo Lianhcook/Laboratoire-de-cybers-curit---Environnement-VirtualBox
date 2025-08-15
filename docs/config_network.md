@@ -14,7 +14,7 @@
 
 ## Kali Linux (attaquant)
 
-| NIC | Type VirtualBox | Réseau | IP suggérée | Passerelle |
+| NIC | Type VirtualBox | Réseau | IP | Passerelle |
 |---|---|---|---|---|
 | **eth0** | Réseau interne | **Lab_Red** | via DHCP pfSense  **192.168.1.100/24** | **192.168.1.1** (pfSense em1) |
 
