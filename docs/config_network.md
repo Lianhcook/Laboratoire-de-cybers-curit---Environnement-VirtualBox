@@ -51,7 +51,7 @@
   - *Interface 3* → **Réseau interne `LAB_LAN`**
 
 - **SELKS**  
-  - *Interface 3* → **Lab_LAN** 
+  - *Interface 3* → **LAB_LAN** 
 
 ---
 
@@ -61,14 +61,5 @@
 Depuis Kali Linux vers la passerelle LAB_LAN (192.168.2.1)
 Le ping a été effectué avec succès, confirmant la connectivité entre Kali et pfSense sur le réseau Lab_IDS.
 
-PING 192.168.2.1 (192.168.2.1) 56(84) bytes of data.
-64 bytes from 192.168.2.1: icmp_seq=1 ttl=64 time=0.887 ms
-64 bytes from 192.168.2.1: icmp_seq=2 ttl=64 time=1.24 ms
-
---- 192.168.2.1 ping statistics ---
-2 packets transmitted, 2 received, 0% packet loss, time 1002ms
-rtt min/avg/max/mdev = 0.887/1.065/1.244/0.178 ms
-
-
 Observation :
-Ce test prouve que l’interface OPT1 (Lab_IDS) de pfSense est correctement configurée et que Kali communique bien avec la passerelle.
+Ce test prouve que l’interface OPT1 (LAB_LAN) de pfSense est correctement configurée et que Kali communique bien avec la passerelle, pareille avec le reseau LAB_RED.
