@@ -43,19 +43,18 @@
 ## Rappel câblage VirtualBox (important)
 
 - **pfSense**
-  - *Adaptateur 1* → **NAT** (em0)
-  - *Adaptateur 2* → **Réseau interne `Lab_Red`** (em1)
-  - *Adaptateur 3* → **Réseau interne `Lab_LAN`** (em2)
+  - *Interface 1* → **NAT** (em0)
+  - *Interface 2* → **Réseau interne `Lab_Red`** (em1)
+  - *Interface 3* → **Réseau interne `Lab_LAN`** (em2)
 
 - **Kali**  
-  - *Adaptateur 1* → **Réseau interne `Lab_Red`**  
-  - *(Optionnel) Adaptateur 2 → NAT* pour apt update
+  - *Interface 2* → **Réseau interne `Lab_Red`**  
 
 - **Windows Server**  
-  - *Adaptateur 1* → **Réseau interne `Lab_LAN`**
+  - *Interface 3* → **Réseau interne `Lab_LAN`**
 
 - **SELKS**  
-  - *Adaptateur 1* → **Lab_LAN** (ou Lab_Red selon ton choix IDS)
+  - *Interface 3* → **Lab_LAN** 
 
 ---
 
