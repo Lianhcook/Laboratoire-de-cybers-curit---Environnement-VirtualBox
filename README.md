@@ -10,9 +10,9 @@ L'environnement repose sur VirtualBox et intègre plusieurs machines virtuelles 
 
 | Machine        | Rôle                       | Système d'exploitation / Logiciel | Réseau(x)              |
 |----------------|---------------------------|------------------------------------|------------------------|
-| Kali Linux     | Attaquant                  | Kali Linux 2025.2                 | LAB_RED, NAT           |
-| IPFire         | Pare-feu / Routeur         | IPFire                             | LAB_RED, LAB_LAN       |
-| SELKS          | IDS/IPS                    | SELKS 10                           | LAB_RED, LAB_LAN       |
+| Kali Linux     | Attaquant                  | Kali Linux 2025.2                 | LAB_RED           |
+| pfSense        | Pare-feu / Routeur         | pfSense                           | LAB_RED, LAB_LAN       |
+| SELKS          | IDS/IPS                    | SELKS 10                           |LAB_LAN       |
 | Windows Server | Cible AD / Services        | Windows Server 2022                | LAB_LAN                |
 
 ## Schéma du réseau
