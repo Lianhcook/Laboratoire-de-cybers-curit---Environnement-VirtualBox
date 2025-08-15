@@ -58,10 +58,5 @@
 
 ---
 
-## Routes & ping de test
-
-- Depuis **Kali** : `ping 10.10.10.1` (GW pfSense em1) puis un hôte du LAN si règle autorisée.  
-- Depuis **Windows** : `ping 192.168.100.1` (GW pfSense em2).  
-- Accès GUI pfSense :  
-  - côté LAN : `https://192.168.100.1`  
-  - côté Lab_Red (si autorisé) : `https://10.10.10.1`
+## Ping de test
+![Schéma du laboratoire](ping.png)
