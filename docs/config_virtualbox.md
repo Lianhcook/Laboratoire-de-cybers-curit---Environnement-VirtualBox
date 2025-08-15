@@ -17,7 +17,7 @@ Ouvrir VirtualBox → Cliquer sur "Nouvelle" → Choisir un nom clair (ex: `Kali
 
 ---
 
-### IPFire (Pare-feu / Routeur)
+### pfSense (Pare-feu / Routeur)
 - **OS** : Linux → Autre (64-bit)
 - **RAM** : 1 Go
 - **Stockage** : 4 Go
