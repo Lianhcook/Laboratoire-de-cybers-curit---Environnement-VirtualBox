@@ -5,8 +5,8 @@
 | Interface pfSense | Rôle | Type VirtualBox | Réseau | IP/Passerelle | DHCP |
 |---|---|---|---|---|---|
 | **em0** | **WAN Internet** | **NAT** | NAT | IP & GW fournies par VirtualBox (10.0.2.15/24) | n/a |
-| **em1** | **Lab_Red** | **Réseau interne → `LAB_RED`** | 192.168.1.1/24 | pfSense **10.10.10.1/24** (GW pour LAB_RED) | optionnel |
-| **em2** | **Lab_LAN** | **Réseau interne → `LAB_LAN`** | 192.168.2.1/24  | pfSense **192.168.100.1/24** (GW pour LAB_LAN) | **activé** (p.ex. 192.168.100.10–200) |
+| **em1** | **Lab_Red** | **Réseau interne → `LAB_RED`** | 192.168.1.1/24 | pfSense **192.168.1.1/24** (GW pour LAB_RED) | **activé** (p.ex. 192.168.1.100–199) |
+| **em2** | **Lab_LAN** | **Réseau interne → `LAB_LAN`** | 192.168.2.1/24  | pfSense **192.168.2.1/24** (GW pour LAB_LAN) | **activé** (p.ex. 192.168.2.100–199) |
 
 
 
